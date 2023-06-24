@@ -12,8 +12,8 @@ struct ContactsView: View {
     let persons: [Person]
     
     var body: some View {
-        NavigationView {
-            ZStack { 
+        NavigationStack {
+            ZStack {
                 List(persons) { person in
                     NavigationLink(
                         destination: DetailContactView(person: person)) {

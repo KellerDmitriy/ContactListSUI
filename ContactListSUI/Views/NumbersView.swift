@@ -14,13 +14,14 @@ struct NumbersView: View {
     let persons: [Person]
     
     var body: some View {
-        NavigationView {
-            LazyVStack { // извините,очень захотелось использовать
+        NavigationStack {
+            LazyVStack { // извините, очень захотелось использовать
                 List(selection: $singleSelection) {
-                    ForEach(persons) { contact in
-                        Section(header: Text("\(contact.fullName)")) {
-                            Label(contact.phoneNumber, systemImage: "phone")
-                            Label(contact.email, systemImage: "tray")
+                    ForEach(persons) { person in
+                        Section(header: Text("\(person.fullName)")) {
+                            Label(person.phoneNumber, systemImage: "phone")
+                            Label(person.email, systemImage: "tray")
+                            //а лэйблы переиспользовать не смог(
                         }
                     }
                 }

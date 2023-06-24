@@ -23,6 +23,7 @@ struct DetailContactView: View {
                     Label(person.phoneNumber, systemImage: "phone")
                     Label(person.email, systemImage: "tray")
                 }
+     
             .navigationTitle(person.fullName)
         }
     }
