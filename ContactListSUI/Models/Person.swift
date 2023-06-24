@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Person: Identifiable {
     
     let id = UUID()
@@ -18,10 +17,6 @@ struct Person: Identifiable {
     
     var fullName: String {
         "\(name) \(surname)"
-    }
-    
-    var rows: [String] {
-        [phoneNumber, email]
     }
     
     static func getContactList() -> [Person] {

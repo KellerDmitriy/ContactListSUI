@@ -64,6 +64,7 @@
 				E16A940D2A46209B00F615E9 /* ContactListSUIApp.swift */,
 				E16A941D2A4620C200F615E9 /* Views */,
 				E16A941B2A4620A900F615E9 /* Models */,
+				E16A941C2A4620B200F615E9 /* Services */,
 				E16A94262A4642A500F615E9 /* Resources */,
 				E16A94132A46209C00F615E9 /* Preview Content */,
 			);
@@ -82,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				E16A94202A46216F00F615E9 /* Person.swift */,
-				E16A941C2A4620B200F615E9 /* Services */,
 			);
 			path = Models;
 			sourceTree = "<group>";
