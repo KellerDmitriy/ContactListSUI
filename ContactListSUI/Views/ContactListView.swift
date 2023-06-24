@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct ContactListView: View {
-    let contacts = Person.getContactList()
+    private let persons = Person.getContactList()
     
     var body: some View {
         NavigationStack {
             TabView {
-                ContactsView(contacts: contacts)
+                ContactsView(persons: persons)
                     .tabItem {
-                        Label("NumbersContacts", systemImage: "person.3.fill" )
+                        Label("Contacts", systemImage: "person.3.fill")
                     }
-                NumbersView(contacts: contacts)
+                NumbersView(persons: persons)
                     .tabItem {
-                        Label("Numbers", systemImage: "phone" )
+                        Label("Numbers", systemImage: "phone")
                     }
             }
-            .navigationTitle("Contact List")
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

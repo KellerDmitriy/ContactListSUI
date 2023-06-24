@@ -54,9 +54,3 @@ struct Person: Identifiable {
     }
 }
 
-enum Contacts: String {
-    case phone = "phone"
-    case email = "tray"
-    case persons = "person.3"
-    
-}

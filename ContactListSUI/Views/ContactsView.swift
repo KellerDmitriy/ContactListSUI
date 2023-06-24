@@ -9,30 +9,27 @@ import SwiftUI
 
 struct ContactsView: View {
     
-    let contacts: [Person]
+    let persons: [Person]
     
     var body: some View {
-            NavigationStack {
-                List(contacts) { contact in
+        NavigationView {
+            ZStack { 
+                List(persons) { person in
                     NavigationLink(
-                        destination: DetailContactView(contact: contact)
-                    ) {
-                        HStack {
-                            Text("\(contact.name)")
-                            Text("\(contact.surname)")
+                        destination: DetailContactView(person: person)) {
+                            Text("\(person.fullName)")
                         }
-                    }
                 }
                 .listStyle(.plain)
-                .navigationTitle("Contact list")
-                
             }
+            .navigationTitle("Contact List")
         }
     }
+}
 
-    struct ContactsView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContactsView(contacts: Person.getContactList())
-        }
+struct ContactsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactsView(persons: Person.getContactList())
     }
+}
 

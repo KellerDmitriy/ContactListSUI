@@ -14,7 +14,7 @@
 		E16A941F2A46215D00F615E9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A941E2A46215D00F615E9 /* DataStore.swift */; };
 		E16A94212A46216F00F615E9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A94202A46216F00F615E9 /* Person.swift */; };
 		E16A94232A46304A00F615E9 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A94222A46304A00F615E9 /* ContactsView.swift */; };
-		E16A94252A46306200F615E9 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A94242A46306200F615E9 /* NumberView.swift */; };
+		E16A94252A46306200F615E9 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A94242A46306200F615E9 /* NumbersView.swift */; };
 		E16A942A2A464E9B00F615E9 /* DetailContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A94292A464E9B00F615E9 /* DetailContactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		E16A941E2A46215D00F615E9 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E16A94202A46216F00F615E9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E16A94222A46304A00F615E9 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
-		E16A94242A46306200F615E9 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		E16A94242A46306200F615E9 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 		E16A94292A464E9B00F615E9 /* DetailContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,8 +100,8 @@
 			children = (
 				E16A940F2A46209B00F615E9 /* ContactListView.swift */,
 				E16A94222A46304A00F615E9 /* ContactsView.swift */,
-				E16A94242A46306200F615E9 /* NumberView.swift */,
 				E16A94292A464E9B00F615E9 /* DetailContactView.swift */,
+				E16A94242A46306200F615E9 /* NumbersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 				E16A94102A46209B00F615E9 /* ContactListView.swift in Sources */,
 				E16A941F2A46215D00F615E9 /* DataStore.swift in Sources */,
 				E16A94212A46216F00F615E9 /* Person.swift in Sources */,
-				E16A94252A46306200F615E9 /* NumberView.swift in Sources */,
+				E16A94252A46306200F615E9 /* NumbersView.swift in Sources */,
 				E16A94232A46304A00F615E9 /* ContactsView.swift in Sources */,
 				E16A940E2A46209B00F615E9 /* ContactListSUIApp.swift in Sources */,
 			);

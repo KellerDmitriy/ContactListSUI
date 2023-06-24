@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct DetailContactView: View {
-    let contact: Person
+    let person: Person
     
     var body: some View {
         NavigationStack {
-            VStack {
                 List {
                     HStack {
                         Spacer()
@@ -21,17 +20,16 @@ struct DetailContactView: View {
                             .frame(width: 150, height: 150)
                         Spacer()
                     }
-                    Label(contact.phoneNumber, systemImage: "phone")
-                    Label(contact.email, systemImage: "tray")
+                    Label(person.phoneNumber, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
-            }
-            .navigationTitle(contact.fullName)
+            .navigationTitle(person.fullName)
         }
     }
 }
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactView(contact: Person.getContactList().first!)
+        DetailContactView(person: Person.getContactList().first!)
     }
 }
